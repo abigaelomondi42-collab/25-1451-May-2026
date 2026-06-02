@@ -61,16 +61,11 @@ section{
     display:flex;
     flex-wrap:wrap;
     gap:15px;
-    justify-content:center;
-}
-.gallery div{
-    background:white;
+    justify-content:.gallery img{
     width:220px;
-    height:150px;
+    height:220px;
+    object-fit:cover;
     border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 form{
@@ -131,15 +126,17 @@ footer{
     <div class="card">Facial Treatments</div>
     <div class="card">Eyelash Extensions</div>
 </div>
-</section>
 <section id="gallery">
-    <h2>Gallery</h2>
-<div class="gallery">
-    <div>Hair Style 1</div>
-    <div>Hair Style 2</div>
-    <div>Makeup Design</div>
-</div>
+    <h2>Hairstyle Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400" alt="Braids">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400" alt="Beauty Style">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400" alt="Hair Styling">
+    </div>
 </section>
+
+
 <section id="booking">
     <h2>Book an Appointment</h2>
 <form>
