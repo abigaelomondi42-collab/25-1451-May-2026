@@ -3,77 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glow Hair & Beauty Salon</title>
+<title>Glow Beauty Salon</title>
 
 <style>
 body{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: white;
-    color: #666;
+    background:white;
+    color:#333;
+    margin:0;
 }
 
 header{
-    text-align: center;
-    padding: 30px;
+    text-align:center;
+    padding:20px;
 }
 
 nav{
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    text-align:center;
+    padding:15px;
 }
 
 nav a{
-    text-decoration: none;
-    color: #777;
-    margin: 15px;
-    font-weight: bold;
+    text-decoration:none;
+    color:black;
+    margin:15px;
+    font-weight:bold;
 }
 
 section{
-    padding: 30px;
+    padding:20px;
 }
 
-h1,h2{
-    color: #555;
+img{
+    width:250px;
+    height:180px;
+    object-fit:cover;
+    margin:10px;
 }
 
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+table{
+    width:100%;
+    border-collapse:collapse;
 }
 
-.gallery img{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
+table, th, td{
+    border:1px solid black;
 }
 
-.services{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.card{
-    border: 1px solid #eee;
-    padding: 20px;
-    width: 220px;
-    text-align: center;
-    border-radius: 10px;
+th, td{
+    padding:10px;
+    text-align:center;
 }
 
 footer{
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #eee;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
@@ -81,69 +65,147 @@ footer{
 <body>
 
 <header>
-    <h1>Glow Hair & Beauty Salon</h1>
+    <h1>Glow Beauty Salon</h1>
     <p>Your Beauty, Our Passion</p>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
 </nav>
 
-<section id="about">
-    <h2>About Us</h2>
+<section>
+    <h2>Welcome to Glow Beauty Salon</h2>
     <p>
-        Glow Hair & Beauty Salon provides professional beauty services
-        including braiding, hairstyling, makeup, nail care and skincare.
-        Our goal is to help every client look and feel confident.
+        We provide professional beauty and hair services to help you look and feel your best.
     </p>
 </section>
 
-<section id="services">
-    <h2>Our Services</h2>
+<section>
+    <h2>Our Salon Images</h2>
 
-    <div class="services">
-        <div class="card">Hair Braiding</div>
-        <div class="card">Hair Styling</div>
-        <div class="card">Makeup Services</div>
-        <div class="card">Manicure & Pedicure</div>
-        <div class="card">Facial Treatments</div>
-        <div class="card">Eyelash Extensions</div>
-    </div>
-</section>
+    <a href="services.html">
+        <img src="braids.jpg" alt="Braids">
+    </a>
 
-<section id="gallery">
-    <h2>Gallery</h2>
-
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500" alt="Braids">
-        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500" alt="Beauty">
-        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500" alt="Hair Style">
-    </div>
+    <img src="makeup.jpg" alt="Makeup Service">
+    <img src="nails.jpg" alt="Nail Service">
+    <img src="treatment.jpg" alt="Hair Treatment">
+    <img src="customer.jpg" alt="Happy Customer">
 </section>
 
 <section>
-    <h2>Why Choose Us?</h2>
+    <h2>How To Book</h2>
+
+    <ol>
+        <li>Choose a service</li>
+        <li>Book an appointment</li>
+        <li>Visit the salon</li>
+        <li>Enjoy your beauty treatment</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Our Services</h2>
+
     <ul>
-        <li>Professional stylists</li>
-        <li>Quality beauty products</li>
-        <li>Affordable prices</li>
-        <li>Friendly customer service</li>
-        <li>Modern beauty techniques</li>
+        <li>Braiding</li>
+        <li>Hair Treatment</li>
+        <li>Makeup</li>
+        <li>Manicure</li>
+        <li>Pedicure</li>
     </ul>
 </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: 0712 345 678</p>
-    <p>Email: glowbeautysalon@gmail.com</p>
-    <p>Location: Nairobi, Kenya</p>
+<section>
+    <h2>Service Categories</h2>
+
+    <ul>
+        <li>Hair Services
+            <ul>
+                <li>Braiding</li>
+                <li>Wig Installation</li>
+                <li>Hair Treatment</li>
+            </ul>
+        </li>
+
+        <li>Beauty Services
+            <ul>
+                <li>Makeup</li>
+                <li>Manicure</li>
+                <li>Pedicure</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Price List</h2>
+
+    <table>
+        <caption>Beauty Salon Services</caption>
+
+        <tr>
+            <th>Service</th>
+            <th>Price (Ksh)</th>
+        </tr>
+
+        <tr>
+            <td>Braiding</td>
+            <td>1500</td>
+        </tr>
+
+        <tr>
+            <td>Hair Treatment</td>
+            <td>1000</td>
+        </tr>
+
+        <tr>
+            <td>Manicure</td>
+            <td>500</td>
+        </tr>
+
+        <tr>
+            <td>Pedicure</td>
+            <td>700</td>
+        </tr>
+
+        <tr>
+            <td>Makeup</td>
+            <td>2000</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Salon Audio</h2>
+
+    <audio controls>
+        <source src="promo.mp3" type="audio/mpeg">
+    </audio>
+</section>
+
+<section>
+    <h2>Salon Video</h2>
+
+    <video width="400" controls>
+        <source src="salonvideo.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section>
+    <h2>Follow Us</h2>
+
+    <a href="https://www.instagram.com" target="_blank">
+        Visit Our Instagram
+    </a>
 </section>
 
 <footer>
-    <p>&copy; 2026 Glow Hair & Beauty Salon. All Rights Reserved.</p>
+    <p>&copy; 2026 Glow Beauty Salon</p>
 </footer>
 
 </body>
