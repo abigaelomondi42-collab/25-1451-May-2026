@@ -4,99 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Glow Hair & Beauty Salon</title>
+
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
 }
+
 body{
-    background:#fff5f7;
-    color:#333;
+    background:white;
+    color:black;
 }
+
 header{
-    background:#d63384;
+    background:black;
     color:white;
     text-align:center;
     padding:30px;
 }
+
 nav{
-    background:#f8c8dc;
+    background:#e0e0e0;
     text-align:center;
     padding:15px;
 }
+
 nav a{
     text-decoration:none;
     color:black;
     margin:15px;
     font-weight:bold;
 }
+
 .hero{
     text-align:center;
     padding:60px 20px;
 }
+
 .hero h2{
-    color:#d63384;
     margin-bottom:10px;
 }
+
 section{
     padding:30px;
 }
+
 .services{
     display:flex;
     flex-wrap:wrap;
     gap:15px;
     justify-content:center;
 }
+
 .card{
     background:white;
     width:220px;
     padding:20px;
+    border:1px solid black;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
     text-align:center;
 }
+
 .gallery{
     display:flex;
     flex-wrap:wrap;
     gap:15px;
-    justify-content:.gallery img{
+    justify-content:center;
+}
+
+.gallery img{
     width:220px;
     height:220px;
     object-fit:cover;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border:1px solid black;
 }
+
 form{
     max-width:400px;
     margin:auto;
 }
+
 input, textarea{
     width:100%;
     padding:10px;
     margin:10px 0;
+    border:1px solid black;
 }
+
 button{
-    background:#d63384;
+    background:black;
     color:white;
     border:none;
     padding:10px;
     width:100%;
+    cursor:pointer;
 }
+
 footer{
-    background:#d63384;
+    background:black;
     color:white;
     text-align:center;
     padding:15px;
 }
 </style>
+
 </head>
 <body>
+
 <header>
     <h1>Glow Hair & Beauty Salon</h1>
     <p>Your Beauty, Our Passion</p>
 </header>
+
 <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
@@ -104,10 +126,12 @@ footer{
     <a href="#booking">Booking</a>
     <a href="#contact">Contact</a>
 </nav>
+
 <div class="hero">
     <h2>Welcome to Glow Hair & Beauty Salon</h2>
     <p>Professional Hair, Makeup, Nails and Beauty Treatments.</p>
 </div>
+
 <section id="about">
     <h2>About Us</h2>
     <p>
@@ -116,16 +140,19 @@ footer{
         braiding, makeup, nails and skincare.
     </p>
 </section>
+
 <section id="services">
     <h2>Our Services</h2>
-<div class="services">
-    <div class="card">Hair Braiding</div>
-    <div class="card">Hair Styling</div>
-    <div class="card">Makeup Services</div>
-    <div class="card">Manicure & Pedicure</div>
-    <div class="card">Facial Treatments</div>
-    <div class="card">Eyelash Extensions</div>
-</div>
+    <div class="services">
+        <div class="card">Hair Braiding</div>
+        <div class="card">Hair Styling</div>
+        <div class="card">Makeup Services</div>
+        <div class="card">Manicure & Pedicure</div>
+        <div class="card">Facial Treatments</div>
+        <div class="card">Eyelash Extensions</div>
+    </div>
+</section>
+
 <section id="gallery">
     <h2>Hairstyle Gallery</h2>
 
@@ -136,25 +163,28 @@ footer{
     </div>
 </section>
 
-
 <section id="booking">
     <h2>Book an Appointment</h2>
-<form>
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="date" required>
-    <textarea placeholder="Preferred Service"></textarea>
-    <button type="submit">Book Now</button>
-</form>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="date" required>
+        <textarea placeholder="Preferred Service"></textarea>
+        <button type="submit">Book Now</button>
+    </form>
 </section>
+
 <section id="contact">
     <h2>Contact Us</h2>
     <p>Phone: 0712 345 678</p>
     <p>Email: glowbeautysalon@gmail.com</p>
     <p>Location: Nairobi, Kenya</p>
 </section>
+
 <footer>
     <p>&copy; 2026 Glow Hair & Beauty Salon. All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>
